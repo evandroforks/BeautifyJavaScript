@@ -7,10 +7,10 @@ import sys
 from os.path import dirname
 from sublime_plugin import TextCommand
 
-sys.path.insert(0, dirname(__file__))
-from src.py.commands import *
-from src.py.event_listeners import *
-from src.py.main import *
+# sys.path.insert(0, dirname(__file__))
+from .src.py.commands import *
+from .src.py.event_listeners import *
+from .src.py.main import *
 
 
 class HtmlprettifyCommand(TextCommand):
